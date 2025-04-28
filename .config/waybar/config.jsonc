@@ -1,0 +1,20 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "modules-left": [],
+    "modules-center": ["group/hardware","group/music","hyprland/workspaces","group/watch", "group/utils"],
+    "modules-right": ["tray", "custom/separator", "group/info"],
+    "include": [
+	"~/.config/waybar/modules/hardware.jsonc",
+	"~/.config/waybar/modules/music.jsonc",
+        "~/.config/waybar/modules/workspaces.jsonc",
+        "~/.config/waybar/modules/watch.jsonc",
+	"~/.config/waybar/modules/utils.jsonc",
+	"~/.config/waybar/modules/info.jsonc"
+    ],
+    "custom/separator": {
+	"format": "\uf444",
+	"tooltip": false
+    }
+}

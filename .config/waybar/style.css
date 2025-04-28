@@ -1,0 +1,85 @@
+@import "theme.css";
+
+* {
+    font-family: "Rubik", "JetBrainsMono NF", monospace;
+    font-size: 14px;
+}
+
+window#waybar {
+    color: @text;
+    background-color: @background;
+}
+
+#hardware,
+#music,
+#workspaces,
+#watch,
+#utils,
+#tray,
+#info {
+    background-color: @surface0;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+#tray,
+#info {
+    background-color: transparent;
+}
+
+#workspaces button {
+    color: @white;
+}
+
+#workspaces button.active{
+   color: @surface0;
+   background-color: @white;
+   margin: 5px 0;
+   padding: 0 5px;
+   border-radius: 50%;
+}
+
+#workspaces button:hover {
+   border: none;
+   background: none;
+   box-shadow: none;
+   text-shadow: none;
+}
+
+#workspaces button.empty {
+   color: @gray;
+}
+
+#clock.time {
+    color: @white;
+    font-weight: bold;
+}
+
+#custom-screenshot,
+#custom-eyedropper,
+#custom-keyboard {
+    color: @white;
+    background-color: @surface1;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+#custom-screenshot {
+    padding-right: 14px;
+}
+
+#custom-eyedropper {
+    padding-right: 12.5px;
+}
+
+#custom-keyboard {
+    margin-right: 0;
+    padding-right: 15px;
+}
+
+#custom-separator {
+    padding-left: 2.5px;
+    padding-right: 7.5px;
+}

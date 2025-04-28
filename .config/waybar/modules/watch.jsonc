@@ -1,0 +1,18 @@
+{
+    "group/watch": {
+	"orientation": "horizontal",
+	"modules": ["clock#time", "custom/separator", "clock#day", "clock#date"]
+    },
+    "clock#time": {
+	"format": "{:%H:%M}",
+	"tooltip": false
+    },
+    "clock#day": {
+	"format": "{:%A}, ",
+	"tooltip": false
+    },
+    "clock#date": {
+	"format": "{:%d/%m}",
+	"tooltip": false
+    }
+}

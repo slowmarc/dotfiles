@@ -1,0 +1,30 @@
+{ 
+    "group/info": {
+	"orientation": "horizontal",
+	"modules": ["hyprland/language", "network", "bluetooth"]
+    },
+    "hyprland/language": {
+	"format": "{shortDescription}"
+    },
+    "network": {
+	"interval": 1,
+	"format-wifi": "({signalStrength}%)\uf1eb",
+	"format-ethernet": "\uef09",
+	"format-disconnected": "\udb80\udc1d",
+	"tooltip-format-wifi": "{essid} {bandwidthTotalBytes}",
+	"tooltip-format-ethernet": "{ifname} {bandwidthTotalBytes}",
+	"tooltip-format-disconnected": "Disconnected"
+    },
+    "bluetooth": {
+	"format-off": "\udb80\udcb2",
+	"format-disabled": "\udb80\udcb2",
+	"format-no-controller": "\udb80\udcb2",
+	"format-on": "\udb80\udcaf",
+	"format-connected": "\udb80\udcb1",
+	"tooltip-format-off": "Off",
+	"tooltip-format-disabled": "Disabled",
+	"tooltip-format-no-controller": "No controller",
+	"tooltip-format-on": "On",
+	"tooltip-format-connected": "{device_alias}"
+    }
+}

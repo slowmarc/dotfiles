@@ -1,0 +1,23 @@
+{
+    "group/music": {
+	"orientation": "horizontal",
+	"modules": ["mpris#icon", "mpris#track"]
+    },
+    "mpris#icon": {
+	"player": "ncspot",
+	"interval": 1,
+	"status-icons": {
+	   "playing": "\uf04c",
+	   "paused": "\uf04b"
+	},
+        "format": "{status_icon}",
+	"format-stopped": "TI STON PEGKE",
+	"tooltip": false
+    },
+    "mpris#track": {
+	"player": "ncspot",
+	"interval": 1,
+	"format": "{status_icon} {title} - {artist}",
+	"tooltip": false
+    }
+}

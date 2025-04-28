@@ -1,0 +1,14 @@
+{
+    "group/hardware": {
+	"orientation": "horizontal",
+	"modules": ["custom/cpu", "cpu"]
+    },
+    "custom/cpu": {
+	"format": "\uf4bc",
+	"tooltip": false
+    },
+    "cpu": {
+	"interval": 1,
+	"tooltip": false
+    }
+}
