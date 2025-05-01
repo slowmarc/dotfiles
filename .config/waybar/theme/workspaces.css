@@ -1,0 +1,29 @@
+#workspaces {
+    background-color: @surface0;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+#workspaces button {
+    color: @white;
+}
+
+#workspaces button.active{
+   color: @surface0;
+   background-color: @white;
+   margin: 5px 0;
+   padding: 0 5px;
+   border-radius: 50%;
+}
+
+#workspaces button:hover {
+   border: none;
+   background: none;
+   box-shadow: none;
+   text-shadow: none;
+}
+
+#workspaces button.empty {
+   color: @gray;
+}

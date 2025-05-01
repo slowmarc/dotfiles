@@ -1,0 +1,11 @@
+#watch {
+    background-color: @surface0;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+#clock.time {
+    color: @white;
+    font-weight: bold;
+}

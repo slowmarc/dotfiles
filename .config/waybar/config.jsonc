@@ -2,10 +2,12 @@
     "layer": "top",
     "position": "top",
     "spacing": 4,
-    "modules-left": [],
+    "modules-left": ["group/system", "group/controls"],
     "modules-center": ["group/hardware","group/music","hyprland/workspaces","group/watch", "group/utils"],
     "modules-right": ["tray", "custom/separator", "group/info"],
     "include": [
+	"~/.config/waybar/modules/system.jsonc",
+	"~/.config/waybar/modules/controls.jsonc",
 	"~/.config/waybar/modules/hardware.jsonc",
 	"~/.config/waybar/modules/music.jsonc",
         "~/.config/waybar/modules/workspaces.jsonc",

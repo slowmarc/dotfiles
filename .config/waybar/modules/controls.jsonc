@@ -1,0 +1,44 @@
+{
+    "group/controls": {
+	"orientation": "horizontal",
+	"modules": ["backlight", "pulseaudio#input-icon", "pulseaudio#input", "pulseaudio#output-icon", "pulseaudio#output"]
+    },
+    "backlight": {
+	"format": "{icon}",
+	"format-icons": ["", "", "", "", "", "", "", "", ""],
+	"scroll-step": 5
+    },
+    "pulseaudio#input-icon": {
+	"format": "{format_source}",
+	"format-source": "\uf130",
+	"format-source-muted": "\uf131",
+	"scroll-step": 5,
+	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+ -l 1",
+	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-",
+	"tooltip": false
+    },
+    "pulseaudio#input": {
+	"format": "{format_source}",
+	"format-source": "{volume}%",
+	"format-source-muted": "",
+	"on-scroll-up": "",
+	"on-scroll-down": "",
+	"tooltip": false
+    },
+    "pulseaudio#output-icon": {
+	"format": "{icon}",
+	"format-muted": "\ueee8",
+	"format-icons": {
+	    "default": ["\uf026", "\uf027", "\uf028"]
+	},
+	"scroll-step": 5,
+	"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+	"tooltip": false
+    },
+    "pulseaudio#output": {
+	"format-muted": "",
+	"on-scroll-up": "",
+	"on-scroll-down": ""
+    }
+}

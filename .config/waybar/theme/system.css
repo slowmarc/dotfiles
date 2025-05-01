@@ -1,0 +1,25 @@
+#system {
+    background-color: @surface0;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+#custom-power,
+#custom-sleep,
+#custom-lock {
+    color: @white;
+    background-color: @surface1;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+#custom-power {
+    padding-right: 14px;
+}
+
+#custom-lock {
+    margin-right: 0;
+    padding-right: 12.5px;
+}

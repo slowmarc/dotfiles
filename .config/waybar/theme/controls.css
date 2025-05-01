@@ -1,0 +1,33 @@
+#controls {
+    background-color: @surface0;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+#backlight,
+#pulseaudio.input-icon,
+#pulseaudio.output-icon {
+    color: @white;
+    background-color: @surface1;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+#pulseaudio.input-icon.source-muted {
+    color: red;
+    padding-right: 17.5px;
+}
+
+#pulseaudio.output-icon {
+    padding-right: 15px;
+}
+
+#pulseaudio.output-icon.muted {
+    color: red;
+}
+
+#pulseaudio.output {
+    margin-right: 0;
+}

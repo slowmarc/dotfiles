@@ -1,0 +1,21 @@
+{
+    "group/system": {
+	"orientation": "horizontal",
+	"modules": ["custom/power", "custom/sleep", "custom/lock"]
+    },
+    "custom/power": {
+	"format": "\uf011",
+	"on-click": "poweroff",
+	"on-click-right": "reboot",
+	"tooltip": false
+    },
+    "custom/sleep": {
+	"format": "\udb82\udd04",
+	"tooltip": false
+    },
+    "custom/lock": {
+	"format": "\uf023",
+	"on-click": "hyprlock",
+	"tooltip": false
+    }
+}

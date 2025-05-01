@@ -4,20 +4,26 @@
 	"modules": ["mpris#icon", "mpris#track"]
     },
     "mpris#icon": {
-	"player": "ncspot",
-	"interval": 1,
+	"player": "spotify",
+	"interval": 0,
 	"status-icons": {
 	   "playing": "\uf04c",
 	   "paused": "\uf04b"
 	},
         "format": "{status_icon}",
 	"format-stopped": "TI STON PEGKE",
-	"tooltip": false
+	"tooltip": false,
+	"on-click": "playerctl --player=spotify play-pause",
+	"on-click-middle": "",
+	"on-click-right": ""
     },
     "mpris#track": {
-	"player": "ncspot",
-	"interval": 1,
+	"player": "spotify",
+	"interval": 0,
 	"format": "{status_icon} {title} - {artist}",
-	"tooltip": false
+	"tooltip": false,
+	"on-click": "playerctl --player=spotify previous",
+	"on-click-middle": "",
+	"on-click-right": "playerctl --player=spotify next"
     }
 }

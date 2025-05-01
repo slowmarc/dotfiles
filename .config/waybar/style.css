@@ -1,4 +1,10 @@
-@import "theme.css";
+@define-color text #b7b6b1;
+@define-color surface0 #35322b;
+@define-color surface1 #302f2b;
+@define-color background #403c33;
+
+@define-color white #fffefd;
+@define-color gray #595651;
 
 * {
     font-family: "Rubik", "JetBrainsMono NF", monospace;
@@ -10,76 +16,17 @@ window#waybar {
     background-color: @background;
 }
 
-#hardware,
-#music,
-#workspaces,
-#watch,
-#utils,
-#tray,
-#info {
-    background-color: @surface0;
-    margin: 5px 0;
-    padding: 0 10px;
-    border-radius: 1rem;
-}
-
-#tray,
-#info {
-    background-color: transparent;
-}
-
-#workspaces button {
-    color: @white;
-}
-
-#workspaces button.active{
-   color: @surface0;
-   background-color: @white;
-   margin: 5px 0;
-   padding: 0 5px;
-   border-radius: 50%;
-}
-
-#workspaces button:hover {
-   border: none;
-   background: none;
-   box-shadow: none;
-   text-shadow: none;
-}
-
-#workspaces button.empty {
-   color: @gray;
-}
-
-#clock.time {
-    color: @white;
-    font-weight: bold;
-}
-
-#custom-screenshot,
-#custom-eyedropper,
-#custom-keyboard {
-    color: @white;
-    background-color: @surface1;
-    margin: 5px 5px 5px 0;
-    padding: 5px 10px;
-    border-radius: 50%;
-}
-
-#custom-screenshot {
-    padding-right: 14px;
-}
-
-#custom-eyedropper {
-    padding-right: 12.5px;
-}
-
-#custom-keyboard {
-    margin-right: 0;
-    padding-right: 15px;
-}
-
 #custom-separator {
     padding-left: 2.5px;
     padding-right: 7.5px;
 }
+
+@import "theme/system.css";
+@import "theme/controls.css";
+@import "theme/hardware.css";
+@import "theme/music.css";
+@import "theme/workspaces.css";
+@import "theme/watch.css";
+@import "theme/utils.css";
+@import "theme/tray.css";
+@import "theme/info.css";
